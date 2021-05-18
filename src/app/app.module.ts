@@ -3,16 +3,18 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import {CredinicioModule} from "./credinicio/credinicio.module";
+import {FormsModule} from "@angular/forms";
+import {FilterPipe} from "./credinicio/filter.pipe";
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    FilterPipe
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    CredinicioModule
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

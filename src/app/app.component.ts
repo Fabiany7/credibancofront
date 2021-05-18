@@ -6,5 +6,17 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'credibanco';
+  search='';
+
+
+  folderObjs=[{
+    name:'Folder1',
+    size:'12mb'
+  },{
+    name:'Folder2',
+    size:'10mb'
+  },{
+    name:'Folder3',
+    size:'2mb'
+  }]
 }

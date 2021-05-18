@@ -1,2 +1,15 @@
-<app-credimain>
+<h1 CLASS="titulo">BIBLIOTECA VIRTUAL</h1>
+<hr>
+<br><br>
+<h3>Buscar libro</h3>
+<input type="search"  [(ngModel)]="search">
 
+<div *ngFor="let f of (folderObjs | filter:search)as folder">
+  {{f.name}}
+  {{f.size}}
+
+</div>
+
+<div *ngIf="(folderObjs | filter:search).length <1">
+  Not Found
+</div>
