@@ -9,14 +9,14 @@ export class AppComponent {
   search='';
 
 
-  folderObjs=[{
-    name:'Folder1',
-    size:'12mb'
+  libros=[{
+    autor:'hercules',
+    anno:'2020'
   },{
-    name:'Folder2',
-    size:'10mb'
+    autor:'mitos y leyendas',
+    anno:'1999'
   },{
-    name:'Folder3',
-    size:'2mb'
+    autor:'sherlock holmes',
+    anno:'2007'
   }]
 }

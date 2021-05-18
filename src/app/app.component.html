@@ -4,12 +4,12 @@
 <h3>Buscar libro</h3>
 <input type="search"  [(ngModel)]="search">
 
-<div *ngFor="let f of (folderObjs | filter:search)as folder">
-  {{f.name}}
-  {{f.size}}
+<div *ngFor="let f of (libros | filter:search)as folder">
+  {{f.autor}}
+  {{f.anno}}
 
 </div>
 
-<div *ngIf="(folderObjs | filter:search).length <1">
-  Not Found
+<div *ngIf="(libros | filter:search).length <1">
+  No se encontro nada asociado a la busqueda
 </div>
